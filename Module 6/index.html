@@ -1,0 +1,41 @@
+<!-- Step 1: Create the HTML file (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 6 Demo - CSS Float</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Float Demo</h1>
+    <div class="float-box red"></div>
+    <div class="float-box green"></div>
+    <div class="float-box blue"></div>
+    <div class="clearfix"></div>
+    <p>This is a paragraph with some sample text.</p>
+</body>
+</html>
+
+
+<!-- Explanation:
+In this demo, we have created a simple HTML page with an <h1> heading, three <div> elements with the class .float-box, and a <p> paragraph. We'll use CSS to apply the CSS float property to the boxes to demonstrate CSS layout.
+
+Setting Up: In the <head> section of the HTML file, we link the external CSS file styles.css and set some basic styles for the body to remove default margins and padding and apply a background color.
+
+Styling the <h1> Heading: We center-align the heading text and set its color to a dark gray (#333).
+
+Styling the .float-box: We create a class called .float-box in the CSS file and apply some styles to create floating boxes. Each box has a width and height of 100px, a margin of 10px to create spacing between them, and the float: left; property to make the boxes float side by side.
+
+Styling the Boxes: We add different background colors to each box with the classes .red, .green, and .blue.
+
+Clearing Floats: We create a class called .clearfix with the clear: both; property. This class is applied to an empty <div> after the floating boxes to clear the float and ensure that the subsequent content (the paragraph) doesn't wrap around the floated boxes.
+
+Styling the <p> Paragraph: We add some margin at the top of the paragraph and center-align the text. 
+-->
+
+<!-- Step 3: Result
+When you open the index.html file in your browser, you should see three colored boxes floating side by side, and the paragraph below them. The .clearfix class ensures that the paragraph doesn't wrap around the floating boxes.
+
+This demo visually demonstrates the basics of CSS layout using the CSS float property. You can experiment with different box sizes, margins, and float values to see how they affect the positioning of the elements on the web page.
+-->

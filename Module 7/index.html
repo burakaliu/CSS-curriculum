@@ -1,0 +1,40 @@
+<!-- Step 1: Create the HTML file (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 7 Demo - Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Flexbox Demo</h1>
+    <div class="flex-container">
+        <div class="flex-item red">Item 1</div>
+        <div class="flex-item green">Item 2</div>
+        <div class="flex-item blue">Item 3</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+Explanation:
+In this demo, we have created a simple HTML page with an <h1> heading and a flex container (<div> with class .flex-container) that contains three flex items (<div> elements with class .flex-item). We'll use CSS Flexbox to demonstrate the concepts of Flex Container and Flex Items, Flex Direction, Justify Content, and Align Items.
+
+Setting Up: In the <head> section of the HTML file, we link the external CSS file styles.css and set some basic styles for the body to remove default margins and padding and apply a background color.
+
+Styling the <h1> Heading: We center-align the heading text and set its color to a dark gray (#333).
+
+Flex Container (.flex-container): We create a class called .flex-container in the CSS file and apply display: flex; to create a flex container. This makes all direct children of the .flex-container become flex items. We also use justify-content: center; and align-items: center; to center the flex items horizontally and vertically within the flex container. The height: 200px; and background-color: #ccc; properties are just for visualization purposes.
+
+Flex Items (.flex-item): We create a class called .flex-item in the CSS file to style the flex items. The flex items have padding, margin, bold text, and a flex property (flex: 1;). The flex: 1; property makes the flex items share the available space equally, distributing them evenly within the flex container.
+
+Styling Flex Items with Colors: We add different background colors to each flex item using the classes .red, .green, and .blue. 
+-->
+
+<!-- 
+Step 3: Result
+When you open the index.html file in your browser, you should see three colored flex items evenly spaced and centered within the flex container.
+
+This demo visually demonstrates the basics of CSS Flexbox, covering the concepts of Flex Container and Flex Items, Flex Direction, Justify Content, and Align Items. You can experiment with different flex properties and values to see how they affect the layout of the elements on the web page. 
+-->

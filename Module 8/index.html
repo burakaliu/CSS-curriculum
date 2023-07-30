@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 8 Demo - CSS Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Grid Demo</h1>
+    <div class="grid-container">
+        <div class="grid-item red">Item 1</div>
+        <div class="grid-item green">Item 2</div>
+        <div class="grid-item blue">Item 3</div>
+        <div class="grid-item yellow">Item 4</div>
+        <div class="grid-item orange">Item 5</div>
+        <div class="grid-item purple">Item 6</div>
+    </div>
+</body>
+</html>
+
+
+<!-- Explanation:
+In this demo, we have created a simple HTML page with an <h1> heading and a grid container (<div> with class .grid-container) that contains six grid items (<div> elements with class .grid-item). We'll use CSS Grid to demonstrate the concepts of CSS Grid, creating grid containers and grid items, and defining grid template columns.
+
+Setting Up: In the <head> section of the HTML file, we link the external CSS file styles.css and set some basic styles for the body to remove default margins and padding and apply a background color.
+
+Styling the <h1> Heading: We center-align the heading text and set its color to a dark gray (#333).
+
+Grid Container (.grid-container): We create a class called .grid-container in the CSS file and apply display: grid; to create a grid container. This turns the .grid-container into a grid context. We use grid-template-columns: repeat(3, 100px); to create a 3-column grid with each column having a width of 100px. The grid-gap: 10px; property adds spacing between grid items. The justify-content: center; property centers the grid items horizontally within the grid container.
+
+Grid Items (.grid-item): We create a class called .grid-item in the CSS file to style the grid items. The grid items have padding, bold text, and a background color.
+
+Styling Grid Items with Colors: We add different background colors to each grid item using the classes .red, .green, .blue, .yellow, .orange, and .purple.\
+-->
+<!-- Step 3: Result
+When you open the index.html file in your browser, you should see a 3x2 grid layout with colored grid items.
+
+This demo visually demonstrates the basics of CSS Grid, covering the concepts of creating grid containers and grid items and defining grid template columns. You can experiment with different grid layouts and styles to see how they affect the positioning of the elements on the web page.
+-->

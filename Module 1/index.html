@@ -1,0 +1,99 @@
+<!--Step 1: Create the HTML file (index.html)!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 1 Demo</title>
+</head>
+<body>
+    <h1>Welcome to CSS Module 1 Demo</h1>
+    <p>This is a paragraph with some sample text.</p>
+</body>
+</html>
+
+<!--
+Step 2: Inline CSS (style attribute)
+Let's start by adding some inline CSS to the <h1> and <p> elements in the HTML file.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 1 Demo</title>
+</head>
+<body>
+    <h1 style="color: blue; font-size: 32px;">Welcome to CSS Module 1 Demo</h1>
+    <p style="color: green;">This is a paragraph with some sample text.</p>
+</body>
+</html>
+!-->
+
+
+<!--
+Step 3: Internal CSS (style element)
+Next, let's move the CSS styles from the inline attribute to the <style> element within the <head> section.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 1 Demo</title>
+    <style>
+        h1 {
+            color: blue;
+            font-size: 32px;
+        }
+
+        p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to CSS Module 1 Demo</h1>
+    <p>This is a paragraph with some sample text.</p>
+</body>
+</html>
+!-->
+
+
+
+
+
+<!--
+Step 4: External CSS (link to a separate CSS file)
+Now, let's create an external CSS file named "styles.css" and link it to the HTML file.
+
+Create a new file named "styles.css" in the same folder as your HTML file and add the following CSS code:
+/* styles.css */
+
+h1 {
+    color: blue;
+    font-size: 32px;
+}
+
+p {
+    color: green;
+}
+!-->
+<!--
+Update the HTML file to include the external CSS file:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 1 Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to CSS Module 1 Demo</h1>
+    <p>This is a paragraph with some sample text.</p>
+</body>
+</html>
+
+Now the CSS styles are in a separate file and linked to the HTML file. This is the preferred method for organizing CSS in real-world projects.
+
+!-->

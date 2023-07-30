@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module 9 Demo - Transitions and Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSS Transitions and Animations Demo</h1>
+    <div class="transition-box"></div>
+    <div class="animation-box"></div>
+</body>
+</html>
+
+<!--
+Explanation:
+In this demo, we have created a simple HTML page with an <h1> heading and two <div> elements. We'll use CSS Transitions and Animations to demonstrate the concepts of CSS Transitions and Keyframe Animations.
+
+Setting Up: In the <head> section of the HTML file, we link the external CSS file styles.css and set some basic styles for the body to remove default margins and padding and apply a background color.
+
+Styling the <h1> Heading: We center-align the heading text and set its color to a dark gray (#333).
+
+Transition Box (.transition-box): We create a class called .transition-box in the CSS file to style the first box. The box has a width and height of 100px, a green background color, and a transition effect with transition: background-color 1s ease;. This means that when you hover over the box, the background color will transition smoothly over 1 second with an ease-in-out timing function.
+
+Styling the .transition-box:hover: We apply a hover effect to the .transition-box. When you hover over the box, the background color transitions to red (#ff5a5a).
+
+Animation Box (.animation-box): We create a class called .animation-box in the CSS file to style the second box. The box has a width and height of 100px, a blue background color, and an animation effect with animation: colorChange 3s infinite alternate;. The animation named colorChange is defined later using keyframes.
+
+Keyframe Animation (@keyframes colorChange): We define a keyframe animation called colorChange using the @keyframes rule. The animation starts from a blue background color (#4e9ee4) and changes to a red background color (#ff5a5a) using the from and to keywords. The animation loops infinitely and alternates between the from and to states.
+-->
+
+<!-- Step 3: Result
+When you open the index.html file in your browser, you should see two colored boxes with different effects. The first box changes its background color smoothly to red when you hover over it (transition effect). The second box animates between blue and red colors in an infinite alternate loop (keyframe animation effect).
+
+This demo visually demonstrates the basics of CSS Transitions and Animations, covering the concepts of Transition Properties, Creating Simple Animations, and Keyframe Animations. You can experiment with different transition and animation properties and values to see how they affect the appearance and behavior of the elements on the web page. -->
